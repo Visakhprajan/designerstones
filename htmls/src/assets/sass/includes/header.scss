@@ -7,10 +7,29 @@ header{
   left: 0;
   width: 100%;
   z-index: 999;
+  @include mobile-lg{
+    background-color: rgba($colorBlack, 0.4);
+  }
   .col-md-2{
     @include mobile-lg{
       display: flex;
       justify-content: space-between;
+      align-items: center;
+    }
+    .top-nav{
+      display: none;
+      padding: 0 8px;
+      a{
+        font-size: 16px;
+        line-height: 1;
+        color: $colorWhite;
+        &:hover{
+          color: $colorSecondary;
+        }
+      }
+      @include mobile-lg{
+        display: block;
+      }
     }
     .hamburger{
       display: none;
@@ -29,7 +48,7 @@ header{
   .brand{
     display: block;
     @include mobile-lg{
-      width: 200px;
+      width: 160px;
     }
     img{
       max-width: 100%;
@@ -40,8 +59,7 @@ header{
       @include flex-right-center;
       margin-bottom: 12px;
       @include mobile-lg{
-        margin-bottom: 0;
-        margin-top: 5px;
+        display: none;
       }
       ul{
         @include flex-right-center;

@@ -1,0 +1,44 @@
+.stylish-card{
+  position: relative;
+  z-index: 9;
+  .card-image{
+    overflow: hidden;
+    img{
+      max-width: 100%;
+      @include transition;
+    }
+  }
+  .card-content{
+    margin-top: 20px;
+    h3{
+      font-size: 24px;
+      line-height: 1;
+      color: $colorWhite;
+      font-weight: normal;
+      margin-bottom: 15px;
+      @include transition;
+      @include tablet-lg{
+        font-size: 22px;
+      }
+      @include tablet-sm{
+        font-size: 20px;
+      }
+    }
+    p{
+      color: $colorWhite;
+      @include transition;
+    }
+  }
+  &:hover{
+    .card-image{
+      img{
+        transform: scale(1.02);
+      }
+    }
+    .card-content{
+      h3, p{
+        color: $colorSecondary;
+      }
+    }
+  }
+}

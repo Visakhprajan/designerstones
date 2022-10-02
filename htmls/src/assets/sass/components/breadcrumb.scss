@@ -1,0 +1,33 @@
+.page-breadcrumb{
+  background-color: rgba($colorSilver,0.4);
+  padding: 13px 0 11px;
+  .breadcrumb{
+    @include flex-left-center;
+    color: $colorBlack;
+    font-size: 13px;
+    line-height: 15px;
+    li{
+      position: relative;
+      padding-left: 15px;
+      margin-left: 15px;
+      &:first-child{
+        padding-left: 0;
+        margin-left: 0;
+        &:before{
+          display: none;
+        }
+      }
+      &:before{
+        position: absolute;
+        content: "/";
+        left: 0;
+        top: 0;
+        color: $textGrey;
+        // width: 5px;
+      }
+      a{
+        color: $textGrey;
+      }
+    }
+  }
+}

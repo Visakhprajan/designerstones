@@ -1,0 +1,105 @@
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+* {
+  outline: 0;
+    &,
+    &:before,
+    &:after {
+        box-sizing: inherit;
+    }
+}
+
+a, .btn{
+  transition: 0.5s all ease-in-out;
+}
+
+body {
+  background-color: $colorWhite;
+  font-family: $base-font-family;
+}
+
+
+a{
+  color: $colorBlack;
+  text-decoration: none;
+}
+
+button{
+  &:focus{
+    outline: none;
+  }
+}
+
+ul,ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure{
+  margin: 0px;
+}
+
+address{
+  margin: 0;
+  padding: 0;
+}
+section{
+  padding-top: 70px;
+  @include tablet-sm{
+    padding-top: 30px;
+  }
+}
+.pt-70{
+  padding-top: 70px;
+  @include tablet-sm{
+    padding-top: 30px;
+  }
+}
+.pb-70{
+  padding-bottom: 70px;
+  @include tablet-sm{
+    padding-bottom: 30px;
+  }
+}
+.mt-70{
+  margin-top: 70px;
+  @include tablet-sm{
+    margin-top: 30px;
+  }
+}
+.mb-70{
+  margin-bottom: 70px;
+  @include tablet-sm{
+    margin-bottom: 30px;
+  }
+}
+.w-50{
+  @include tablet-sm{
+    width: 80% !important;
+  }
+  @include mobile-lg{
+    width: 100% !important;
+  }
+}
+// @media (min-width: 1200px){
+//   .container{
+//     max-width: 1320px;
+//   }
+// }
+// @include mobile-landscape { 
+//   .container{
+//     max-width: 100%;
+//   }
+// }
+
+// @media (max-width: $mobile-sm){
+//   .container{
+//     max-width: 100%;
+//     padding-left: 15px;
+//     padding-right: 15px;
+//   }
+// }

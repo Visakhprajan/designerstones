@@ -1,0 +1,53 @@
+.inner-banner{
+  display: block;
+  padding-top: 0;
+  @include tablet-lg{
+    margin-top: 60px;
+  }
+  @include mobile-lg{
+    margin-top: 104px;
+  }
+  .banner-bg{
+    height: 300px;
+    overflow: hidden;
+    @include mobile-lg{
+      height: 200px;
+    }
+    img{
+      width: 100%;
+      min-height: 300px;
+      object-fit: cover;
+      @include mobile-lg{
+        min-height: 200px;
+      }
+    }
+  }
+  .caption-wrapper{
+    .container{
+      position: relative;
+      height: 100%;
+      .caption{
+        position: absolute;
+        top: 133px;
+        left: 0;
+        max-width: 668px;
+        @include mobile-lg{
+          top: 150px;
+          width: 100%;
+          text-align: center;
+        }
+        h1{
+          font-size: 36px;
+          line-height: 38px;
+          color: $colorWhite;
+          max-height: 114px;
+          overflow: hidden;
+          @include mobile-lg{
+            font-size: 26px;
+            line-height: 28px;
+          }
+        }
+      }
+    }
+  }
+}

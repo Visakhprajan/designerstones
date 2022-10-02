@@ -48,7 +48,7 @@ header{
   .brand{
     display: block;
     @include mobile-lg{
-      width: 160px;
+      width: 140px;
     }
     img{
       max-width: 100%;

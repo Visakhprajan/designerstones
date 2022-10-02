@@ -1,0 +1,36 @@
+// Utils
+@import "util/mixins";
+
+
+// Base
+@import "base/variables";
+// @import "base/animations";
+@import "base/typography";
+@import "base/base";
+
+// Pages
+@import "page/home";
+
+// Normalise
+@import "vendor/normalise";
+  
+// includes
+@import "includes/header";
+@import "includes/hero-banner";
+@import "includes/inner-banner";
+@import "includes/news-and-events"; 
+@import "includes/img-content";
+@import "includes/footer";
+
+// Components
+@import "components/button";
+@import "components/title";
+@import "components/breadcrumb";
+@import "components/custom-scrollbar";
+@import "components/card";
+@import "components/stylish-card";
+@import "components/blog-card"; 
+@import "components/thumbnail-card";
+@import "components/gallery-card";
+@import "components/toggle-nav";
+@import "components/thumbs-gallery";

@@ -1,0 +1,11 @@
+//=require plugins/popper.js
+//=require plugins/bootstrap.min.js
+//=require plugins/swiper-bundle.js
+//=require plugins/aos.js
+//=require plugins/fancybox.umd.js
+//require plugins/jquery.glasscase.min.js
+//require plugins/forms.js
+//require plugins/tail.select.min.js
+//require plugins/flatpickr.js
+//require plugins/simplebar.min.js
+//require plugins/counter-up.js

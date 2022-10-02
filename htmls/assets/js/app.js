@@ -1,0 +1,12 @@
+//=require app/base.js
+//=require app/hamburger.js
+//=require app/hero-banner.js
+//=require app/toggle-nav.js
+//=require app/scrolling-nav.js
+//require app/image-zoom.js
+//require app/datepicker.js
+//require app/tooltip.js
+//require app/custom-scrollbar.js
+//require app/counter-up.js
+//require app/card-slider.js
+//require app/thumbs-gallery.js

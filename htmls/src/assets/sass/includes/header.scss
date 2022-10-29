@@ -64,6 +64,9 @@ header{
       ul{
         @include flex-right-center;
         li{
+          & + li{
+            margin-left: 6px;
+          }
           a{
             font-size: 16px;
             line-height: 1;
@@ -120,6 +123,34 @@ header{
               color: $colorSecondary;
             }
           }
+        }
+      }
+    }
+  }
+  &.fixed-menu{
+    background-color: $colorWhite;
+    .brand{
+      width: 120px;
+      img{
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+      }
+    }
+    .top-nav{
+      display: none;
+    }
+    nav {
+      .main-nav {
+        ul {
+          li{
+            a{
+              color: $colorBlack;
+              font-size: 14px;
+              &.active{
+                color: $colorSecondary;
+              }
+            }
+          } 
         }
       }
     }

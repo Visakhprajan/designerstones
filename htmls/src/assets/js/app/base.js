@@ -11,3 +11,13 @@ AOS.init({
   delay:0,
   duration:800,
 });
+
+
+$(window).scroll(function(){
+  var pixel = $(window).scrollTop();
+  if(pixel > 300){
+    $('header').addClass('fixed-menu');
+  } else {
+    $('header').removeClass('fixed-menu');
+  }
+});

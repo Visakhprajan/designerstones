@@ -128,7 +128,9 @@ header{
           }
           &:first-child{
             a{
-              border-top: 1px solid rgba($colorBlack, 0.3);
+              @include mobile-lg{
+                border-top: 1px solid rgba($colorBlack, 0.3);
+              }
             }
           }
         }

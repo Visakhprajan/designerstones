@@ -1,0 +1,26 @@
+.error-page{
+  text-align: center;
+  h1{
+    color: $colorSecondary;
+    font-size: 60px;
+    line-height: 1;
+    margin: 8px 0;
+    @include mobile-lg{
+      font-size: 40px;
+    }
+  }
+  h2{
+    color: $textGrey;
+    font-size: 50px;
+    line-height: 1;
+    margin-bottom: 8px;
+    @include mobile-lg{
+      font-size: 34px;
+    }
+  }
+  p{
+    a{
+      color: $colorSecondary;
+    }
+  }
+}
